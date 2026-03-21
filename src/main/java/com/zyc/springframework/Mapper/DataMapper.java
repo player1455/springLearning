@@ -1,6 +1,17 @@
 package com.zyc.springframework.Mapper;
 
-import org.springframework.web.bind.annotation.Mapping;
+import com.zyc.springframework.Pojo.product;
+import org.apache.ibatis.annotations.Mapper;
+import org.apache.ibatis.annotations.Select;
 
-public interface Mapper {
+import java.util.List;
+
+
+public interface DataMapper {
+
+
+
+    @Select("select * from product where id=#{id}")
+    product getList(Integer id);
+
 }

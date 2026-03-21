@@ -1,11 +1,12 @@
-package com.itheima.pojo;
+package com.zyc.springframework.Pojo;
 
 
+import lombok.Data;
 
 /**
  * 后端统一返回结果
  */
-
+@Data
 public class Result {
 
     private Integer code; //编码：1成功，0为失败

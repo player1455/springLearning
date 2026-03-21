@@ -1,0 +1,17 @@
+#配置数据库连接信息
+spring:
+  application:
+    name: spring-framework
+
+
+  datasource:
+    url: jdbc:mysql://localhost:3306/blog-0901
+    driver-class-name: com.mysql.cj.jdbc.Driver
+    username: root
+    password: 101626
+
+  redis:
+    host: localhost
+    port: 6379
+    password:
+    database: 0

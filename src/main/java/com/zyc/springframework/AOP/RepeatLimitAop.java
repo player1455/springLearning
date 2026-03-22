@@ -36,8 +36,8 @@ public class RepeatLimitAop {
 
         // 只有【加锁失败】才报错（重复提交）
         if (Boolean.FALSE.equals(success)) {
-            return Result.error("操作频繁，请稍后再试");
-            //throw new RuntimeException("操作频繁，请稍后再试");
+//            return Result.error("操作频繁，请稍后再试");
+            throw new RuntimeException("操作频繁，请稍后再试");
         }
 
         // 加锁成功 → 放行

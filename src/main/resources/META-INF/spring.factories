@@ -1,0 +1,2 @@
+# ?springboot???????
+org.springframework.boot.autoconfigure.EnableAutoConfiguration=com.zyc.springframework.Config.shopConfig

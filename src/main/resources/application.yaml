@@ -20,3 +20,15 @@ spring:
 product:
   ready: true
   open-hours: 8:30-22:00
+
+
+management:
+  server:
+    port: 8081
+  endpoints:
+    web:
+      exposure:
+        include: info,health
+  endpoint:
+    info:
+      enabled: true
